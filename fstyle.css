@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 7vh;
+    background-color: #363636;
+    
+}
+
+#search{
+    margin: 5px;
+    display: flex;
+    width: 20%;
+}
+#search button{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+#search input{
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 100px;
+    flex-grow: 1;
+    height: 30px;
+}
+#tabs{
+    padding-inline-start: 200px;
+    padding-inline-end: 200px;
+    display: flex;
+    width: 60%;
+    align-items: flex-end;
+}
+#tabs button{
+    flex-grow: 1;
+    height: 50px;
+    
+}
+#settings{
+    margin: 5px;
+    display: flex;
+    width: 20%;
+    justify-content: end;
+}
+#settings button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: aqua;
+}
+#container{
+    background-color: #1f1f1f;
+    display: flex;
+    width: 100%;
+}
+#container *{
+    border: 2px solid black;
+}
+#leftSide{
+    position: sticky;
+    top: 7vh;
+    left: 0;
+    flex-grow: 1;
+    max-height: 93vh;
+    overflow-y: scroll;
+}
+#rightSide{
+    position: sticky;
+    flex-grow: 1;
+    top: 7vh;
+    right: 0;
+    max-height: 93vh;
+    overflow-y: scroll;
+}
+#center{
+    flex-grow: 3;
+    height: fit-content;
+    overflow-y: auto;
+    padding-inline-start: 50px;
+    padding-inline-end: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#center div{
+    flex-grow: 1;
+    height: 500px;
+}
