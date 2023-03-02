@@ -23,16 +23,17 @@ header #search{
 }
 
 header #search button{  
+    margin-left: 5px;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     
 }
 header #search input{
-    
+    margin-left: 2px;
     border-radius: 30px;
-    height: 50px;
-    width: 300px;
+    height: 30px;
+    width: 200px;
 }
 header #tabs{
     background-color: azure;
@@ -71,22 +72,152 @@ main{
 }
 main #leftside{
     flex-grow: 1;
+    flex-basis: 25vw;
     position: sticky;
     top: 10vh;
     height: 90vh;
-    max-width: 25vw;
     background-color: bisque;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
-main #center{
-    flex-grow: 3;
-    height: 1000px;
-    max-width: 50vw;
+main #leftside #profile{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+main #leftside #profile button{
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
+}
+main #leftside #shortcuts{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+main #leftside #shortcuts button{
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
 }
 main #rightside{
     position: sticky;
     top: 10vh;
     flex-grow: 1;
+    flex-basis: 25vw;
     height: 90vh;
-    max-width: 25vw;
     background-color: bisque;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+main #rightside #pagesP{
+    display: flex;
+    margin-left: 20px;
+    background-color: beige;
+}
+main #rightside #pagesP h3{
+    flex-grow: 3;
+}
+main #rightside #pagesP button{
+    flex-grow: 1;
+}
+main #rightside #contacts{
+    display: flex;
+    flex-direction: column;
+}
+main #rightside #contacts h3{
+    margin: 20px;
+}
+main #rightside #contacts button{
+    margin-left: 20px;
+    flex-grow: 1;
+    height: 50px;
+}
+main #rightside #groups{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+main #rightside #groups h3{
+    margin-left: 20px;
+}
+main #rightside #groups button{
+    margin-left: 20px;
+    flex-grow: 1;
+    height: 50px;
+}
+main #center{
+    flex-grow: 3;
+    flex-basis: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+main #center #stories{
+    display: flex;
+    flex-grow: 1;
+    background-color: burlywood;
+}
+.story{
+    border-radius: 30px;
+    margin: 5px;
+    min-width: 150px;
+    background-color: coral;
+    height: 300px;
+}
+main #center *{
+    margin-top: 10px;
+}
+main #center #post{
+    border-radius: 30px;
+    display: flex;
+    flex-grow: 1;
+    background-color: cornsilk;
+    flex-direction: column;
+}
+main #center #post *{
+    display: flex;
+    margin: 5px;
+}
+main #center #post #wom #B{
+    flex-grow: 1;
+    
+}
+main #center #post #wom #B #a{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+main #center #post #wom #B #b{
+    border-radius: 30px;
+    flex-grow: 1;
+}
+main #center #post #type{
+    flex-grow: 1;
+    
+}
+main #center #post #type button{
+    flex-grow: 1;
+    height: 50px;
+    border-radius: 30px;
+}
+main #center #live{
+    display: flex;
+    background-color: azure;
+    border-radius: 30px;
+}
+main #center #live button{
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+}
+.post{
+    border-radius: 30px;
+    background-color: blueviolet;
+    flex-grow: 1;
+    height: 700px;
 }
