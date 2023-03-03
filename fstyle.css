@@ -10,9 +10,10 @@ header{
     top: 0;
     flex-grow: 1;
     background-color: aqua;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 header #search{
     display: flex;
@@ -40,7 +41,7 @@ header #tabs{
     flex-basis: 50vw;
     flex-grow: 3;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding-left: 5vw;
     padding-right: 5vw;
 }
@@ -74,8 +75,8 @@ main #leftside{
     flex-grow: 1;
     flex-basis: 25vw;
     position: sticky;
-    top: 10vh;
-    height: 90vh;
+    top: 7vh;
+    height: 93vh;
     background-color: bisque;
     overflow-y: auto;
     display: flex;
@@ -88,10 +89,12 @@ main #leftside #profile{
     padding-top: 20px;
     padding-left: 20px;
 }
-main #leftside #profile button{
+main #leftside #profile div{
+    border: 2px solid black;
     border-radius: 20px;
     height: 50px;
-    width: 300px;
+    flex-grow: 1;
+    max-width: 300px;
 }
 main #leftside #shortcuts{
     flex-grow: 1;
@@ -99,17 +102,19 @@ main #leftside #shortcuts{
     flex-direction: column;
     padding-left: 20px;
 }
-main #leftside #shortcuts button{
+main #leftside #shortcuts div{
+    border: 2px solid black;
     border-radius: 20px;
     height: 50px;
-    width: 300px;
+    flex-grow: 1;
+    max-width: 300px;
 }
 main #rightside{
     position: sticky;
-    top: 10vh;
+    top: 7vh;
     flex-grow: 1;
     flex-basis: 25vw;
-    height: 90vh;
+    height: 93vh;
     background-color: bisque;
     padding-top: 20px;
     overflow-y: auto;
@@ -118,6 +123,7 @@ main #rightside #pagesP{
     display: flex;
     margin-left: 20px;
     background-color: beige;
+    
 }
 main #rightside #pagesP h3{
     flex-grow: 3;
@@ -132,7 +138,9 @@ main #rightside #contacts{
 main #rightside #contacts h3{
     margin: 20px;
 }
-main #rightside #contacts button{
+main #rightside #contacts div{
+    border: 2px solid black;
+    border-radius: 20px;
     margin-left: 20px;
     flex-grow: 1;
     height: 50px;
@@ -145,7 +153,9 @@ main #rightside #groups{
 main #rightside #groups h3{
     margin-left: 20px;
 }
-main #rightside #groups button{
+main #rightside #groups div{
+    border: 2px solid black;
+    border-radius: 20px;
     margin-left: 20px;
     flex-grow: 1;
     height: 50px;
@@ -162,6 +172,7 @@ main #center #stories{
     background-color: burlywood;
 }
 .story{
+    flex-grow: 1;
     border-radius: 30px;
     margin: 5px;
     min-width: 150px;
