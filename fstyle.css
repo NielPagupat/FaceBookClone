@@ -10,7 +10,6 @@ header{
     top: 0;
     flex-grow: 1;
     background-color: aqua;
-    height: 7vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,7 +60,7 @@ header #tabs #list div a{
     text-decoration: none;
 }
 header #settings{
-    background-color: beige;
+    
     flex-grow: 1;
     flex-basis: 25vw;
     display: flex;
@@ -69,9 +68,11 @@ header #settings{
     align-items: center;
 }
 header #settings button{
+    aspect-ratio: 1/1;
+    width: auto;
     margin: 5px;
-    height: 50px;
-    width: 50px;
+    height: 6vh;
+    min-height: 50px;
     background-color: aqua;
 }
 main{
@@ -85,8 +86,8 @@ main #leftside{
     flex-grow: 1;
     flex-basis: 25vw;
     position: sticky;
-    top: 7vh;
-    height: 93vh;
+    max-height: 93vh;
+    top: 60px;
     background-color: bisque;
     overflow-y: auto;
     display: flex;
@@ -122,10 +123,10 @@ main #leftside #shortcuts div{
 main #rightside{
     display: flex;
     position: sticky;
-    top: 7vh;
+    top: 60px;
+    max-height: 93vh;
     flex-grow: 1;
     flex-basis: 25vw;
-    height: 93vh;
     background-color: bisque;
     padding-top: 20px;
     overflow-y: auto;
@@ -182,7 +183,9 @@ main #center #content #stories{
     border-radius: 30px;
     margin: 5px;
     background-color: coral;
-    height: 300px;
+    aspect-ratio: 1/2;
+    height: auto;
+    max-height: 300px;
 }
 main #center *{
     margin-top: 10px;
