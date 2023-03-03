@@ -41,15 +41,24 @@ header #tabs{
     flex-basis: 50vw;
     flex-grow: 3;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    min-width: 40vw;
 }
-header #tabs button{
-    border-radius: 10px;
+header #tabs #list{
+    width: 40vw;
+    min-width: 600px;    
+    display: flex;
+    border: 2px solid black;
+}
+header #tabs #list div{
     flex-grow: 1;
-    height: 50px;
-    background-color: brown;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+header #tabs #list div a{
+    text-decoration: none;
 }
 header #settings{
     background-color: beige;
@@ -70,6 +79,7 @@ main{
     background-color: aquamarine;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 main #leftside{
     flex-grow: 1;
@@ -110,6 +120,7 @@ main #leftside #shortcuts div{
     max-width: 300px;
 }
 main #rightside{
+    display: flex;
     position: sticky;
     top: 7vh;
     flex-grow: 1;
@@ -118,10 +129,11 @@ main #rightside{
     background-color: bisque;
     padding-top: 20px;
     overflow-y: auto;
+    flex-direction: column;
+    
 }
 main #rightside #pagesP{
     display: flex;
-    margin-left: 20px;
     background-color: beige;
     
 }
@@ -132,95 +144,88 @@ main #rightside #pagesP button{
     flex-grow: 1;
 }
 main #rightside #contacts{
-    display: flex;
-    flex-direction: column;
-}
-main #rightside #contacts h3{
     margin: 20px;
 }
 main #rightside #contacts div{
     border: 2px solid black;
     border-radius: 20px;
-    margin-left: 20px;
-    flex-grow: 1;
+    width: 350px;
     height: 50px;
 }
 main #rightside #groups{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-}
-main #rightside #groups h3{
-    margin-left: 20px;
+    margin: 20px;
 }
 main #rightside #groups div{
     border: 2px solid black;
     border-radius: 20px;
-    margin-left: 20px;
-    flex-grow: 1;
+    width: 350px;
     height: 50px;
 }
+
 main #center{
     flex-grow: 3;
     flex-basis: 50vw;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    
 }
-main #center #stories{
+main #center #content{
+    width: 40vw;
+    min-width: 600px;
+}
+main #center #content #stories{
     display: flex;
-    flex-grow: 1;
     background-color: burlywood;
 }
 .story{
     flex-grow: 1;
     border-radius: 30px;
     margin: 5px;
-    min-width: 150px;
     background-color: coral;
     height: 300px;
 }
 main #center *{
     margin-top: 10px;
 }
-main #center #post{
+main #center #content #post{
     border-radius: 30px;
     display: flex;
     flex-grow: 1;
     background-color: cornsilk;
     flex-direction: column;
 }
-main #center #post *{
+main #center #content #post *{
     display: flex;
     margin: 5px;
 }
-main #center #post #wom #B{
+main #center #content #post #wom #B{
     flex-grow: 1;
     
 }
-main #center #post #wom #B #a{
+main #center #content #post #wom #B #a{
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
-main #center #post #wom #B #b{
+main #center #content #post #wom #B #b{
     border-radius: 30px;
     flex-grow: 1;
 }
-main #center #post #type{
+main #center #content #post #type{
     flex-grow: 1;
     
 }
-main #center #post #type button{
+main #center #content #post #type button{
     flex-grow: 1;
     height: 50px;
     border-radius: 30px;
 }
-main #center #live{
+main #center #content #live{
     display: flex;
     background-color: azure;
     border-radius: 30px;
 }
-main #center #live button{
+main #center #content #live button{
     margin: 10px;
     height: 50px;
     width: 200px;
