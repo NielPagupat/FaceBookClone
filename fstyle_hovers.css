@@ -1,0 +1,56 @@
+header #search button:hover{
+    cursor: pointer;
+}
+header #settings #list2 button:hover{
+    cursor: pointer;
+}
+header #tabs *:hover{
+    color: #2374E1;
+}
+header #settings #list2 div:hover{
+    background-color: #4E4F50;
+}
+main #leftside:hover{
+    overflow-y: auto;
+}
+main #leftside #profile div:hover{
+    background-color: #4E4F50;
+    cursor: pointer;
+}
+main #leftside #shortcuts div:hover{
+    background-color: #4E4F50;
+    cursor: pointer;
+}
+main #rightside:hover{
+    overflow-y: auto;
+}
+
+.contact:hover{
+    background-color: #4E4F50;
+    cursor: pointer;
+}
+main #rightside #groups div:hover{
+    background-color: #4E4F50;
+    cursor: pointer;
+}
+.post:hover{
+    cursor: pointer;
+}
+.story:hover{
+    cursor: pointer;
+}
+main #center #content #post #wom #B #b:hover{
+    cursor: pointer;
+}
+main #center #content #post #wom #B #a:hover{
+    cursor: pointer;
+}
+main #center #content #post #type div:hover{
+    cursor: pointer;
+    background-color: #4E4F50;
+    
+}
+main #center #content #live #container:hover{
+    cursor: pointer;
+    background-color: #4E4F50;
+}

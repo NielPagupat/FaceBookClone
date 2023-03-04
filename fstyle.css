@@ -12,7 +12,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: gray;
+    background-color: #242526;
 }
 
 header #search{
@@ -32,7 +32,9 @@ header #search button{
     
 }
 header #search input{
-    margin-left: 2px;
+    background-color: #3A3B3C;
+    border: none;
+    margin-left: 10px;
     border-radius: 30px;
     height: 30px;
     width: 200px;
@@ -49,7 +51,6 @@ header #tabs #list{
     width: 40vw;
     min-width: 600px;    
     display: flex;
-    
     justify-content: space-around;
 }
 header #tabs #list div{
@@ -59,6 +60,7 @@ header #tabs #list div{
 }
 header #tabs #list div a{
     font-size: 1.5em;
+    color: #8D8F94;
     text-decoration: none;
 }
 header #settings{  
@@ -75,19 +77,21 @@ header #settings #list2{
 }
 header #settings #list2 div{
     width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    margin: 5px;
+    background-color: #3A3B3C;
 }
 header #settings #list2 div a{
+    color: #8D8F94;
     font-size: 1.5em;
     text-decoration: none;
 }
 header #settings #list2 button{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 5px;
     border-radius: 50%;
     background-image: url(assets/ProfilePic.png);
     background-size: cover;
@@ -99,15 +103,15 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #18191A;
 }
 main #leftside{
     flex-grow: 1;
     flex-basis: 25vw;
     position: sticky;
     max-height: 93vh;
-    top: 50px;
-    background-color: bisque;
-    overflow-y: auto;
+    top: 60px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -126,15 +130,25 @@ main #leftside #profile div{
     max-width: 300px;
     align-items: center;
 }
+main #leftside #profile div #iC{
+    height: 50px;
+    max-width: 50px;
+    padding-right: 10px;
+}
+main #leftside #profile div span{
+    color: white;
+    margin-left: 10px;
+}
 main #leftside #profile div img{
     border-radius: 50%;
     margin-left: 10px;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 main #leftside #profile div a{
     margin-left: 10px;
     text-decoration: none;
+    color: white;
 }
 main #leftside #profile div a i{
     width: 50px;
@@ -148,6 +162,7 @@ main #leftside #shortcuts{
     padding-left: 20px;
 }
 main #leftside #shortcuts h4{
+    color: #9A9CA1;
     margin: 10px;
 }
 main #leftside #shortcuts div{
@@ -158,7 +173,11 @@ main #leftside #shortcuts div{
     display: flex;
     align-items: center;
 }
+main #leftside #shortcuts div span{
+    color: white;
+}
 main #leftside #shortcuts div a{
+    color: white;
     margin-left: 10px;
 }
 main #leftside #shortcuts div a i{
@@ -166,8 +185,13 @@ main #leftside #shortcuts div a i{
     font-size: 2em;
     text-decoration: none;
 }
+main #leftside footer{
+    width: 300px;
+    margin-bottom: 20px;
+}
 main #leftside footer ul li a{
     text-decoration: none;
+    color: white;
 }
 main #leftside footer ul li a i{
     font-size: 5px;
@@ -178,31 +202,45 @@ main #leftside footer ul li{
 main #rightside{
     display: flex;
     position: sticky;
-    top: 50px;
+    top: 60px;
     max-height: 93vh;
     flex-grow: 1;
     flex-basis: 25vw;
-    background-color: bisque;
     padding-top: 20px;
-    overflow-y: auto;
+    overflow: hidden;
     flex-direction: column;
     
 }
 main #rightside #pagesP{
     display: flex;
-    background-color: beige;
+    margin-left: 20px;
     
 }
 main #rightside #pagesP h3{
     flex-grow: 3;
+    color: #9A9CA1;
 }
-main #rightside #pagesP button{
-    flex-grow: 1;
+main #rightside #pagesP a{
+    font-size: 1.5em;
+    margin-right: 20px;
+    color: white;
 }
 main #rightside #contacts{
     margin: 20px;
+    color: #9A9CA1;
 }
-main #rightside #contacts div{
+main #rightside #contacts #setting{
+    display: flex;
+    width: 25vw;
+}
+main #rightside #contacts #setting a{
+    color: #9A9CA1;
+    margin-right: 20px;
+}
+main #rightside #contacts #setting h3{
+    width: 200px;
+}
+.contact{
     margin-top: 10px;
     border-radius: 20px;
     display: flex;
@@ -211,6 +249,7 @@ main #rightside #contacts div{
     height: 50px;
 }
 main #rightside #contacts div span{
+    color: white;
     margin-left: 10px;
 }
 main #rightside #contacts div img{
@@ -221,6 +260,8 @@ main #rightside #contacts div img{
 }
 main #rightside #groups{
     margin: 20px;
+    color: white;
+    margin-bottom: 50px;
 }
 main #rightside #groups div{
     margin-top: 10px;
@@ -232,6 +273,7 @@ main #rightside #groups div{
 }
 main #rightside #groups div span{
     margin-left: 10px;
+    color: white;
 }
 main #rightside #groups div img{
     border: 2px solid black;
@@ -255,13 +297,13 @@ main #center #content{
 main #center #content #stories{
     margin-top: 10px;
     display: flex;
-    background-color: burlywood;
+    
 }
 .story{
     flex-grow: 1;
     border-radius: 30px;
     margin: 5px;
-    background-color: coral;
+    background-color: #242526;
     aspect-ratio: 1/2;
     height: auto;
     max-height: 300px;
@@ -272,12 +314,14 @@ main #center #content #post{
     border-radius: 30px;
     display: flex;
     flex-grow: 1;
-    background-color: cornsilk;
+    background-color: #242526;
     flex-direction: column;
+    
 }
 main #center #content #post *{
     display: flex;
     margin: 5px;
+    color: #B0B3B8;
 }
 main #center #content #post #wom #B{
     flex-grow: 1;
@@ -292,7 +336,9 @@ main #center #content #post #wom #B #a{
 }
 main #center #content #post #wom #B #b{
     border-radius: 30px;
+    background-color: #3A3B3C;
     display: flex;
+    border: none;
     justify-content: start;
     align-items: center;
     flex-grow: 1;
@@ -304,58 +350,68 @@ main #center #content #post #wom #B #b a{
 main #center #content #post #type{
     flex-grow: 1;
     display: flex;
-}
-main #center #content #post #type button a {
-    text-decoration: none;
-}
-main #center #content #post #type button a i{
-    font-size: 1.5em;
-}
-main #center #content #post #type button span{
-    width: 100px;
-}
-main #center #content #post #type button{
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    height: 50px;
-    border-radius: 30px;
-}
-main #center #content #live{
-    margin-top: 10px;
-    background-color: azure;
-    border-radius: 30px;
+    justify-content: space-evenly;
     
 }
 
+main #center #content #post #type div a {
+    text-decoration: none;
+    
+}
+main #center #content #post #type div a i{
+    font-size: 1.5em;
+}
+
+main #center #content #post #type div{
+    display: flex;
+    align-items: center;
+    width: 175px;
+    height: 50px;
+    border-radius: 30px;
+    justify-content: center;
+}
+main #center #content #live{
+    margin-top: 10px;
+    background-color: #242526;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+main #content #live *{
+    color: #B0B3B8;
+}
 main #center #content #live #container{
     border-radius: 30px;
     width: 200px;
     height: 50px;
     display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border: 2px solid #B0B3B8;;
     
 }
-main #center #content #live #container button{
+main #center #content #live #container a{
     margin-left: 10px;
-    border-radius: 30px;
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-main #center #content #live #container button a{
     text-decoration: none;
 }
-main #center #content #live #container button a i{
+main #center #content #live #container a i{
     font-size: 1.5em;
 }
-main #center #content #live #container button span{
+main #center #content #live #container span{
+    margin-left: 20px;
     width: 100px;
 }
 .post{
     margin-top: 10px;
     border-radius: 30px;
-    background-color: blueviolet;
+    background-color: #242526;
     flex-grow: 1;
     height: 700px;
+}
+.line{
+    border: 1px solid #3A3B3C;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 50px;
 }

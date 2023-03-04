@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="fstyle.css">
+    <link rel="stylesheet" href="fstyle_hovers.css">
     <link rel="stylesheet" href="media.css">
     <script src="https://kit.fontawesome.com/f26b31cf22.js" crossorigin="anonymous"></script>
 </head>
@@ -36,7 +37,7 @@
     <main>
         <section id="leftside">
             <section id="profile">
-                <div><img src="assets/ProfilePic.png" alt=""><span>Fname Lastname</span></div>
+                <div><div id="iC"><img src="assets/ProfilePic.png" alt=""></div><span>Fname Lastname</span></div>
                 <div><a href="#"><i class="fa-solid fa-user-group"></i></a><span>Friends</span></div>
                 <div><a href="#"><i class="fa-sharp fa-solid fa-calendar-plus"></i></a><span>Most Recent</span></div>
                 <div><a href="#"><i class="fa-solid fa-user-group"></i></a><span>Groups</span></div>
@@ -44,6 +45,7 @@
                 <div><a href="#"><i class="fa-sharp fa-solid fa-tv"></i></a><span>Watch</span></div>
                 <div><a href="#"><i class="fa-solid fa-circle-arrow-down"></i></a><span>See More</span></div>
             </section>
+            <div class="line"></div>
             <section id="shortcuts">
                 <h4>your shortcuts</h4>
                 <div><a href="#"><i class="fa-solid fa-ticket"></i></a><span>something</span></div>
@@ -81,15 +83,16 @@
                             <button id="b"><a href="#">whats on your mind, Firstname?</a></button>
                         </div>
                     </div>
+                    <div class="line"></div>
                     <div id="type">
-                        <button><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a><span>Live Video</span></button>
-                        <button><a href="#"><i class="fa-sharp fa-solid fa-images"></i></a><span>Photo/Video</span></button>
-                        <button><a href="#"><i class="fa-solid fa-face-grin-wide"></i></a><span>Feeling/Activity</span></button>
+                        <div><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a><span>Live Video</span></div>
+                        <div><a href="#"><i class="fa-sharp fa-solid fa-images"></i></a><span>Photo/Video</span></div>
+                        <div><a href="#"><i class="fa-solid fa-face-grin-wide"></i></a><span>Feeling/Activity</span></div>
                     </div>
                 </section>
                 <section id="live">
                     <div id="container">
-                        <Button><a href="#"><i class="fa-solid fa-video"></i></a><span>create room</span></Button>
+                        <a href="#"><i class="fa-solid fa-video"></i></a><span>create room</span>
                     </div>
                 </section>
 
@@ -103,26 +106,33 @@
         <section id="rightside">
             <section id="pagesP">
                 <h3>Your Pages and Profile</h3>
-                <button>...</button>
+                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
             </section>
+            <div class="line"></div>
             <section id="contacts">
-                <h3>contacts</h3>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
-                <div><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div id="setting">
+                    <h3>contacts</h3>
+                    <a href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
+                <div class="contact"><img src="assets/ProfilePic.png" alt="nada"><span>Fname Lname</span></div>
             </section>
+            <div class="line"></div>
             <section id="groups">
                 <h3>Group Conversations</h3>
                 <div><img src="assets/ProfilePic.png" alt="nada"><span>Group Name</span></div>
