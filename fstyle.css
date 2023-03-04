@@ -3,6 +3,7 @@
 }
 body{
     display: flex;
+    min-width: 600px;
     flex-direction: column;
 }
 header{
@@ -52,6 +53,21 @@ header #search input{
     align-items: center;
 }
 .SB a{
+    font-size: 1.5em;
+    color: #8D8F94;
+}
+.pbar{
+    margin-left: 20px;
+    background-color: #3A3B3C;
+    
+    display: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.pbar a{
     font-size: 1.5em;
     color: #8D8F94;
 }
@@ -124,6 +140,7 @@ header #settings #list2 button{
 main{
     flex-grow: 1;
     display: flex;
+    min-width: 600px;
     flex-direction: row;
     justify-content: space-between;
     background-color: #18191A;
@@ -314,7 +331,6 @@ main #rightside #groups div img{
 main #center{
     margin-top: 10px;
     flex-grow: 3;
-    flex-basis: 50vw;
     display: flex;
     justify-content: center;
     

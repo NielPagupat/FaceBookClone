@@ -1,11 +1,17 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@media only screen and (max-width: 750px) {
+    header #tabs{
+       display: none;
+    }
+    .pbar{
+        display: flex;
+    }
+    header #settings{
+        min-width: 300px;
+    }
+    header #search{
+        min-width: 300px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
