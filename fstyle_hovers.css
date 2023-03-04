@@ -1,6 +1,9 @@
 header #search button:hover{
     cursor: pointer;
 }
+.SB:hover{
+    background-color: #4E4F50;
+}
 header #settings #list2 button:hover{
     cursor: pointer;
 }

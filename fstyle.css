@@ -39,6 +39,22 @@ header #search input{
     height: 30px;
     width: 200px;
 }
+.SB{
+    
+    margin-left: 20px;
+    background-color: #3A3B3C;
+    
+    display: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.SB a{
+    font-size: 1.5em;
+    color: #8D8F94;
+}
 header #tabs{
     flex-basis: 50vw;
     flex-grow: 3;
@@ -48,8 +64,7 @@ header #tabs{
     min-width: 40vw;
 }
 header #tabs #list{
-    width: 40vw;
-    min-width: 600px;    
+    width: 40vw;    
     display: flex;
     justify-content: space-around;
 }
@@ -57,6 +72,9 @@ header #tabs #list div{
     width: 50px;
     display: flex;
     justify-content: center;
+}
+header #tabs #list #appear{
+    display: none;
 }
 header #tabs #list div a{
     font-size: 1.5em;
@@ -76,7 +94,7 @@ header #settings #list2{
     justify-content: end;
 }
 header #settings #list2 div{
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
@@ -88,10 +106,15 @@ header #settings #list2 div{
 header #settings #list2 div a{
     color: #8D8F94;
     font-size: 1.5em;
+    
     text-decoration: none;
+}
+.plus{
+    display: none;
 }
 header #settings #list2 button{
     margin: 5px;
+    min-width: 50px;
     border-radius: 50%;
     background-image: url(assets/ProfilePic.png);
     background-size: cover;
@@ -233,12 +256,18 @@ main #rightside #contacts #setting{
     display: flex;
     width: 25vw;
 }
-main #rightside #contacts #setting a{
-    color: #9A9CA1;
+main #rightside #contacts #setting div{
     margin-right: 20px;
+    display: flex;
+    justify-content: start;
+    flex-grow: 1;
+}
+main #rightside #contacts #setting div a{
+    flex-grow: 1;
+    color: white;
 }
 main #rightside #contacts #setting h3{
-    width: 200px;
+    flex-grow: 1;
 }
 .contact{
     margin-top: 10px;
@@ -409,9 +438,10 @@ main #center #content #live #container span{
     flex-grow: 1;
     height: 700px;
 }
-.line{
-    border: 1px solid #3A3B3C;
+hr{
+    
     flex-grow: 1;
-    margin-left: 20px;
     margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
