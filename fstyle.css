@@ -149,7 +149,7 @@ main #leftside{
     flex-grow: 1;
     flex-basis: 25vw;
     position: sticky;
-    max-height: 93vh;
+    height: 93vh;
     top: 60px;
     overflow: hidden;
     display: flex;
@@ -456,8 +456,6 @@ main #center #content #live #container span{
 }
 hr{
     
-    flex-grow: 1;
     margin-right: 50px;
     margin-left: 10px;
-    margin-top: 20px;
 }
